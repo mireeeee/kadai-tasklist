@@ -18,7 +18,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = Tasklist::all();
+        $tasks = Task::all();
 
         return view('tasks.index', [
             'tasks' => $tasks,
@@ -68,7 +68,11 @@ class TasksController extends Controller
      */
     public function show($id)
     {
-        //
+        $task = Task::find($id);
+
+        return view('tasks.show', [
+            'task' => $task,
+        ]);
     }
 
     /**
