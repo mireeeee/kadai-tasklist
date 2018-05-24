@@ -2,12 +2,48 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Tasklist/title </title>
+        
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+            .row div {
+                border: 1px solid #000;
+                padding: 1em;
+                text-align: center;
+                background-color: #dedede;
+            }
+
+        </style>
+        
     </head>
 
     <body>
-         @include('commons.error_messages')
+         
         
-        @yield('content')
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">col-xs-12</div>
+                
+                <div class="col-sm-8">col-sm-8</div>
+                 <div class="col-md-offset-2 col-sm-8">col-sm-8</div>
+                
+                
+                <div class="col-lg-6">col-lg-6</div>
+                <div class="col-lg-offset-3 col-lg-6">col-lg-6</div>
+
+                
+            </div>
+        </div>
+        
     </body>
 </html>

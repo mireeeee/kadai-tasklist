@@ -20,5 +20,8 @@
         {!! Form::submit('投稿') !!}
 
     {!! Form::close() !!}
+    
+   
+    
 
 @endsection
